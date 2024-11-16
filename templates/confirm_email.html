@@ -1,0 +1,27 @@
+<!--3. 이메일 확인 페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이메일 확인</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>이메일 확인</h1>
+    <h4>정상적인 토큰값을 보유한 이용자만 인증이 가능합니다.</h4>
+    <form id="confirmEmailForm">
+        <label for="email">이메일 주소:</label>
+        <input type="email" id="email" name="email" required placeholder="인증 시 사용한 이메일을 입력하세요">
+
+        <label for="email">토큰값:</label>
+        <input type="text" id="token" name="token" required placeholder="전송받은 토큰 값 입력">
+
+        <button type="submit">인증하기</button>
+    </form>
+    <p id="reponseMessage"></p>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
+

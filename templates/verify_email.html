@@ -1,0 +1,32 @@
+<!--2. 이메일 인증 페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이메일 인증</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>이메일 인증</h1>
+    <h4>투표의 신뢰도를 위하여 이메일 인증을 통해 투표가 가능한 사용자인지 검증합니다.</h4>
+    <form id="emailForm">
+        <label for="email">이메일 주소:</label>
+        <input type="email" id="email" name="email" required placeholder="이메일을 입력하세요..">
+        <button type="submit">인증 메일 전송</button>
+    </form>
+    <div>
+        <h4>전송된 이메일을 열어 개인별 익명 토큰 값을 확인해주세요.</h4>
+    </div>
+    <p id="reponseMessage"></p>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
