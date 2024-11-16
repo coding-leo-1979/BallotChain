@@ -6,12 +6,12 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Flask-Mail 설정
-app.config['MAIL_SERVER'] = 'smtp.naver.com' # SMTP 서버 주소
+app.config['MAIL_SERVER'] = 'smtp.gmail.com' # SMTP 서버 주소
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'sallysooo@naver.com' # 이메일 계정
+app.config['MAIL_USERNAME'] = 'example@gmail.com' # 이메일 계정
 app.config['MAIL_PASSWORD'] = '1234' # 발급받은 이메일 계정 비밀번호
-app.config['MAIL_DEFAULT_SENDER'] = 'sallysooo@naver.com'
+app.config['MAIL_DEFAULT_SENDER'] = 'example@gmail.com'
 mail = Mail(app)
 serializer = URLSafeTimedSerializer("your-secret-key")
 
